@@ -7,7 +7,7 @@ function Feed() {
 
   useEffect(() => {
     fetch("https://www.reddit.com/r/"+ subreddit +".json").then(res => {
-      if(res.status != 200){
+      if(res.status !== 200){
         console.log("KAPUT");
         return;
       }
